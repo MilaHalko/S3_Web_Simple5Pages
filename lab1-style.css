@@ -32,3 +32,32 @@ ul li {list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+body{
+    border: 1px solid black;
+}
+.top {
+}
+.right-top-span {
+}
+.center {
+}
+.center-main_blocks {
+}
+.center-main_blocks-top_part {
+}
+.center-left {
+}
+.center-central_blocks {
+}
+.center-top {
+}
+.center-central {
+}
+.center-bottom {
+}
+.center-right {
+}
+.bottom {
+}
+.right-bootom-span {
+}
