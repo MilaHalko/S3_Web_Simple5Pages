@@ -94,7 +94,7 @@ header p {
 }
 footer{
     border-top: 3px solid rgb(38, 0, 126);
-    background: url(../images/css_back.jpg) 100% no-repeat;
+    background: url(./images/css_back.jpg) 100% no-repeat;
     background-size: cover;
     opacity: 0.9;
 }
