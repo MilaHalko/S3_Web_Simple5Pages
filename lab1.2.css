@@ -149,10 +149,6 @@ footer div p {
     color: white;
     opacity: 0.5;
 }
-.center__top p::before {
-    content: '';
-    background: url(../images/Down_Arrow.png) 10px 10px no-repeat;
-}
 .center__right {
     width: 25%;
 }
