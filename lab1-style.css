@@ -53,6 +53,10 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     font-weight: 500;
     line-height: 20px;
 }
+body{
+    width: 100vw;
+    height: 100vh;
+}
 
 /* SAME COLORS */
 header, footer {background: rgb(36, 152, 160);}
@@ -90,18 +94,27 @@ header, footer {
     display: flex;
     height: 25%;
 }
+header {
+    justify-content: center;
+}
+footer div {
+    display: flex;
+    width: 70%;
+}
+footer div p {
+    margin: 10px 20px 10px 10px;
+    overflow: hidden;
+}
 header q {
     font-style: italic;
-    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-family: 'Izax';
     color: rgb(152, 211, 226);
     quotes: '\00AB' '\00BB' '\201E' '\201C';
-    width: px;
     font-weight: 100;
     text-align: center;
     display: flex;
     align-self: center;
-    white-space: pre;
-    padding: 0 0 0 25px;
+    max-width: 500px;
 }
 /* CENTER */
 .center {
@@ -155,6 +168,16 @@ header q {
 /* Center sides */
 .center__top {
     height: 20%;
+    display: flex;
+    justify-content: center;
+}
+.center__top p {
+    display: flex;
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: rgb(25, 124, 131);
+    opacity: 0.5;
 }
 .center__bottom {
     height: 20%;
