@@ -152,6 +152,7 @@ footer div p {
 }
 .center__right {
     width: 25%;
+    background: url(../images/girl.jpeg) 30% 50% no-repeat;
 }
 nav {
     display: flex;
@@ -184,6 +185,6 @@ nav li::before {
     margin: 0 10px 0 0;
     box-shadow: 0 3px 2px rgb(121, 103, 72);
 }
-nav li:nth-child(2)::before {
+nav li:nth-child(1)::before {
     background-color: rgb(190, 116, 128);
 }
