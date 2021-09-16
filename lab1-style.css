@@ -56,6 +56,8 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 body{
     width: 100vw;
     height: 100vh;
+    min-width: 850px;
+    min-height: 700px;
 }
 
 /* SAME COLORS */
@@ -90,36 +92,39 @@ nav, .center__right {background: rgb(255, 240, 211);}
     padding-right: 15px;
 }
 
+/* HEADER_FOOTER */
 header, footer {
     display: flex;
     height: 25%;
 }
-header {
+header div {
+    display: flex;
+    align-self: center;
+    margin: 0 0 0 30px;
+    width: 70%;
     justify-content: center;
+}
+header div q {
+    font-style: italic;
+    
+    quotes: '\00AB' '\00BB' '\201E' '\201C';
+    text-align: center;
+}
+header q, footer p {
+    color: rgb(152, 211, 226);
 }
 footer div {
     display: flex;
     width: 70%;
 }
 footer div p {
-    margin: 10px 20px 10px 10px;
+    margin: 20px;
     overflow: hidden;
 }
-header q {
-    font-style: italic;
-    font-family: 'Izax';
-    color: rgb(152, 211, 226);
-    quotes: '\00AB' '\00BB' '\201E' '\201C';
-    font-weight: 100;
-    text-align: center;
-    display: flex;
-    align-self: center;
-    max-width: 500px;
-}
+
 /* CENTER */
 .center {
     height: 50%;
-    min-width: 850px;
     display: flex;
 }
 .center__main-blocks {
@@ -136,7 +141,6 @@ header q {
 /* Center__Main */
 .center__main {
     height: 80%;
-    min-height: 210px;
     padding: 30px 30px;
     position: relative;
     border: 3px solid rgb(241, 48, 80);
@@ -166,12 +170,12 @@ header q {
 }
 
 /* Center sides */
-.center__top {
+.center__top, .center__bottom {
     height: 20%;
     display: flex;
     justify-content: center;
 }
-.center__top p {
+.center__top p, .center__bottom p{
     display: flex;
     align-self: center;
     text-transform: uppercase;
@@ -179,22 +183,23 @@ header q {
     color: rgb(25, 124, 131);
     opacity: 0.5;
 }
-.center__bottom {
-    height: 20%;
-}
 .center__right {
     width: 25%;
-    min-width: 200px;
     background: url(../images/girl.jpeg) 40% 50% no-repeat;
 }
 nav {
+    display: flex;
     width: 30%;
-    min-width: 150px;
-    padding: 40px 0 30px 15px;
+    border-radius: 20px;
+}
+nav ul {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
 }
 nav li {
     padding: 0 0 0 15px;
-    margin: 0 0 30px 0;
+    height: 50px;
 }
 nav li::before {
     content: '';
