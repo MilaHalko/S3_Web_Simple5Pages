@@ -1,21 +1,22 @@
 /* BASICS */
 *{
-    font-family: 'Playfair Display';
+    font-family: 'Izax';
     font-size: 15px;
     font-weight: 500;
     line-height: 20px;
+    color: rgb(38, 0, 126);
 }
 body{
     width: 100vw;
     height: 100vh;
-    min-width: 850px;
-    min-height: 700px;
+    min-width: 900px;
+    min-height: 850px;
 }
 
 /* SAME COLORS */
-header, footer {background: rgb(36, 152, 160);}
-.center__top, .center__bottom, body {background: rgb(152, 211, 226);}
-nav, .center__right {background: rgb(255, 240, 211);}
+header, footer {background: rgb(15, 72, 156);}
+.center__top, .center__bottom, body {background: rgb(10, 147, 211);}
+nav, .center__right {background: rgb(212, 212, 212);}
 .center__main, .top-title, .bottom-title {background: rgb(243, 243, 243);}
 
 /*TITLES*/
@@ -26,9 +27,9 @@ nav, .center__right {background: rgb(255, 240, 211);}
     right: 20px;
     width: 200px;
     height: 50px;
-    border: 5px solid rgb(25, 124, 131);
+    border: 5px solid rgb(38, 0, 126);
     border-radius: 15px;
-    box-shadow: -8px 0 8px rgb(8, 67, 71);
+    box-shadow: 0 5px 10px rgb(27, 44, 99);
 }
 .top-title h1, .bottom-title h2 {
     width: 100%;
@@ -48,6 +49,13 @@ nav, .center__right {background: rgb(255, 240, 211);}
 header, footer {
     display: flex;
     height: 25%;
+    position: relative;
+}
+header {
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 5px 15px rgb(27, 44, 99);
+    border-bottom: 3px solid rgb(38, 0, 126);
 }
 header div {
     display: flex;
@@ -56,14 +64,39 @@ header div {
     width: 70%;
     justify-content: center;
 }
-header div q {
-    font-style: italic;
-    
-    quotes: '\00AB' '\00BB' '\201E' '\201C';
+header h2, aside h2 {
+    color: white;
+    font-size: 40px;
+    text-shadow: 0 5px 5px rgb(38, 0, 126);
+    border: 10px double rgb(38, 0, 126);
     text-align: center;
+    align-self: center;
+    line-height: 40px;
 }
-header q, footer p {
-    color: rgb(152, 211, 226);
+header h2{
+    padding: 15px;
+    margin: 15px 0 15px 30px;
+    width: 150px;
+}
+aside h2 {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+}
+header p {
+    color: white;
+    margin: 50px 30px;
+    width: 45%;
+    font-size: 25px;
+    opacity: 0.5;
+    line-height: 30px;
+}
+footer{
+    border-top: 3px solid rgb(38, 0, 126);
+    background: url(../images/css_back.jpg) 100% no-repeat;
+    background-size: cover;
+    opacity: 0.9;
 }
 footer div {
     display: flex;
@@ -93,32 +126,15 @@ footer div p {
 /* Center__Main */
 .center__main {
     height: 80%;
-    padding: 30px 30px;
-    position: relative;
+    border: 5px solid rgb(38, 0, 126);
+    border-radius: 5px;
+    min-height: 240px;
+    margin: 0 10px;
 }
-.center__main p::first-letter {
-    padding-left: 15px;
-    font-size: 30px;
-}
-.center__main span {
-    color: rgb(241, 48, 80);
-}
-.center__main a {
+.center__main img {
     display: block;
-    width: 100%;
-    position: absolute;
-    bottom: 30px;
-    margin: 0 0 0 -30px;
-    text-align: center;
-    color: rgb(25, 124, 131);
-    text-decoration: underline;
-    text-transform: lowercase;
-    font-style: italic;
+    margin: 0 auto;
 }
-.center__main a:hover {
-    color: lightseagreen;
-}
-
 /* Center sides */
 .center__top, .center__bottom {
     height: 20%;
@@ -130,16 +146,30 @@ footer div p {
     align-self: center;
     text-transform: uppercase;
     font-size: 40px;
-    color: rgb(25, 124, 131);
+    color: white;
     opacity: 0.5;
+}
+.center__top p::before {
+    content: '';
+    background: url(../images/Down_Arrow.png) 10px 10px no-repeat;
 }
 .center__right {
     width: 25%;
 }
+.center__right ol {
+    margin: 0 40px;
+}
+.center__right li {
+    font-size: 20px;
+    padding: 0 0 5px 0;
+}
 nav {
     display: flex;
     width: 30%;
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 5px 15px rgb(27, 44, 99);
+    position: relative;
+    z-index: 2;
 }
 nav ul {
     display: flex;
@@ -149,24 +179,26 @@ nav ul {
 nav li {
     padding: 0 0 0 15px;
     height: 50px;
-    color: rgb(190, 116, 128);
+    color: rgb(88, 70, 133);
+    font-size: 25px;
 }
 nav li a {
-    color: rgb(241, 48, 80);
+    color: rgb(38, 0, 126);
+    font-size: 25px;
 }
 nav li a:hover {
-    font-size: 20px;
+    font-size: 30px;
 }
 nav li::before {
     content: '';
     border-radius: 50%;
-    background-color: rgb(241, 48, 80);
+    background-color: rgb(38, 0, 126);
     width: 10px;
     height: 10px;
     display: inline-block;
     margin: 0 10px 0 0;
-    box-shadow: 0 3px 2px rgb(121, 103, 72);
+    box-shadow: 0 3px 2px rgb(74, 71, 82);
 }
-nav li:nth-child(1)::before {
-    background-color: rgb(190, 116, 128);
+nav li:nth-child(2)::before {
+    background-color: rgb(88, 70, 133);
 }
