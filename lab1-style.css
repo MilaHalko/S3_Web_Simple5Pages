@@ -162,7 +162,7 @@ header q {
 .center__right {
     width: 25%;
     min-width: 200px;
-    background: url(/images/girl.jpeg) 40% 50% no-repeat;
+    background: url(../images/girl.jpeg) 40% 50% no-repeat;
 }
 nav {
     width: 30%;
