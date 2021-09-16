@@ -137,7 +137,7 @@ footer div p {
 }
 .center__right {
     width: 25%;
-    background: url(../images/girl.jpeg) 30% 50% no-repeat;
+    background: url(./images/girl.jpeg) 30% 50% no-repeat;
 }
 nav {
     display: flex;
