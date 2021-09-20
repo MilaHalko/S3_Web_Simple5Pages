@@ -1,0 +1,160 @@
+/* BASICS */
+*{
+    font-weight: 500;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    min-width: 800px;
+    min-height: 700px;
+}
+
+/* SAME COLORS */
+footer, header {background: #FCAF17;}
+.center__top, .center__bottom, body {background: rgb(255, 255, 255);}
+nav, .center__right {background: #F0DCCF;}
+.top-title, .bottom-title {background: #1FB8D8;}
+
+/*TITLES*/
+.top-title, .bottom-title {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    border: 5px solid #86C752;
+    border-radius: 15px;
+}
+.bottom-title {
+    padding-right: 15px;
+}
+h1, h2 {
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+}
+.top-title h1 {
+    text-align: center;
+}
+.bottom-title h2 {
+    text-align: right;
+}
+
+/* HEADER_FOOTER */
+header, footer {
+    height: 25%;
+    position: relative;
+    display: flex;
+    padding: 15px;
+}
+header {
+    background: url(./images/seo.jpg) center/cover no-repeat;
+    border: 10px solid #FCAF17;
+}
+footer {
+    padding: 25px;
+}
+footer p {
+    width: 70%;
+    font-size: 20px;
+}
+p span {
+    font-weight: 700;
+    text-decoration: underline;
+}
+/* CENTER */
+.center {
+    height: 50%;
+    display: flex;
+}
+.center__main-blocks {
+    width: 75%;
+}
+.main-blocks__top-part {
+    display: flex;
+    height: 80%;
+}
+.center__central-blocks {
+    width: 70%;
+}
+
+/* Center__Main */
+.center__main {
+    height: 80%;
+    background: #1FB8D8 url(./images/SEO_components.jpg) center/contain no-repeat;
+    border-top: 5px solid #86C752;
+    border-bottom: 5px solid #86C752;
+}
+
+/* Center sides */
+.center__top, .center__bottom {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.center__top p, .center__bottom p {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #F0DCCF;
+    text-align: center;
+}
+.center__right, nav {
+    border: 5px solid #86C752;
+}
+.center__right {
+    width: 25%;
+    padding: 20px;
+}
+.center__right h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 55px;
+    text-align: center;
+}
+.center__right h3:hover {
+    color: #1FB8D8;
+    font-size: 25px;
+}
+.center__right li {
+    padding-left: 35px;
+    background: url(./images/check-icon_light-blue.png) 5px 5px no-repeat;
+    line-height: 30px;
+    font-size: 16px;
+}
+nav {
+    display: flex;
+    width: 30%;
+    padding: 20px;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+}
+nav li {
+    color: #63ddf5;
+}
+nav li a {
+    color: #1FB8D8;
+}
+nav li a:hover {
+    font-size: 25px;
+}
+nav li::before {
+    content: '';
+    border-radius: 50%;
+    background-color: #1FB8D8;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+nav li:nth-child(5)::before {
+    background-color: #63ddf5;
+}

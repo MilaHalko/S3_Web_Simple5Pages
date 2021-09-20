@@ -57,8 +57,7 @@ header, footer {
     height: 25%;
 }
 header {
-    background: url(./images/b&w_forest.jpg) 0 -120px/100% auto no-repeat fixed;
-    object-fit: contain;
+    background: url(./images/b&w_forest.jpg) center 100%/cover no-repeat;
 }
 header div {
     display: flex;

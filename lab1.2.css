@@ -52,7 +52,6 @@ header, footer {
     position: relative;
 }
 header {
-    position: relative;
     z-index: 3;
     box-shadow: 0 5px 15px rgb(27, 44, 99);
     border-bottom: 3px solid rgb(38, 0, 126);

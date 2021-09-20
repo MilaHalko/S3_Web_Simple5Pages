@@ -46,6 +46,7 @@ header, footer {
     height: 25%;
     position: relative;
     display: flex;
+    padding: 15px;
 }
 header p, footer p {
     width: 70%;
@@ -70,10 +71,12 @@ header p, footer p {
 /* Center__Main */
 .center__main {
     height: 80%;
+    overflow: auto;
+    padding: 15px;
 }
 .center__main p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: px;
+    line-height: 25px;
     text-align: center;
 }
 
@@ -82,25 +85,23 @@ header p, footer p {
     height: 20%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .center__right {
     width: 25%;
+    padding: 20px;
 }
-.center__right h2:hover {
-    text-decoration: underline;
+.center__right p {
+    font-style: italic;
+    line-height: 20px;
 }
-.center__right ul {
-    margin: 30px;
-    text-align: right;
+.center__right p::first-letter {
+    font-size: 25px;
 }
 nav {
     display: flex;
     width: 30%;
-}
-nav ul {
-    display: flex;
-    align-self: center;
-    flex-direction: column;
+    align-items: center;
 }
 nav li {
     padding: 0 0 0 15px;
