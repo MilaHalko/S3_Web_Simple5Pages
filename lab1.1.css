@@ -8,8 +8,10 @@
 body{
     width: 100vw;
     height: 100vh;
-    min-width: 850px;
-    min-height: 700px;
+    min-width: 400px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* SAME COLORS */
@@ -18,82 +20,72 @@ header, footer {background: rgb(36, 152, 160);}
 nav, .center__right {background: rgb(255, 240, 211);}
 .center__main, .top-title, .bottom-title {background: rgb(243, 243, 243);}
 
+/* HEADER_FOOTER */
+header, footer {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+header div, footer div {    
+    display: flex;
+    align-items: center;
+}
+header div q {
+    font-style: italic;
+    quotes: '\00AB' '\00BB' '\201E' '\201C';
+    text-align: center;
+}
+header q, footer p {
+    color: rgb(152, 211, 226);
+    margin: 20px;
+}
+
 /*TITLES*/
 .top-title, .bottom-title {
-    display: flex;
-    align-self: center;
-    position: absolute;
-    right: 20px;
+    margin-right: 20px;
     width: 200px;
-    height: 50px;
     border: 5px solid rgb(25, 124, 131);
     border-radius: 15px;
     box-shadow: -8px 0 8px rgb(8, 67, 71);
 }
 .top-title h1, .bottom-title h2 {
     width: 100%;
-    align-self: center;
     font-size: 30px;
+    line-height: 30px;
 }
 .top-title h1 {
     text-align: center;
-    letter-spacing: 8px;
 }
 .bottom-title h2 {
     text-align: right;
-    padding-right: 15px;
-}
-
-/* HEADER_FOOTER */
-header, footer {
-    display: flex;
-    height: 25%;
-}
-header div {
-    display: flex;
-    align-self: center;
-    margin: 0 0 0 30px;
-    width: 70%;
-    justify-content: center;
-}
-header div q {
-    font-style: italic;
-    
-    quotes: '\00AB' '\00BB' '\201E' '\201C';
-    text-align: center;
-}
-header q, footer p {
-    color: rgb(152, 211, 226);
-}
-footer div {
-    display: flex;
-    width: 70%;
-}
-footer div p {
-    margin: 20px;
-    overflow: hidden;
 }
 
 /* CENTER */
 .center {
-    height: 50%;
+    flex: 2;
     display: flex;
+    font-display: row;
 }
 .center__main-blocks {
-    width: 75%;
+    flex: 4;
+    display: flex;
+    flex-direction: column;
 }
 .main-blocks__top-part {
+    flex: 5;
     display: flex;
-    height: 80%;
 }
 .center__central-blocks {
-    width: 70%;
+    flex: 4;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Center__Main */
 .center__main {
-    height: 80%;
-    padding: 30px 30px;
+    flex: 5;
+    padding: 30px 30px 60px 30px;
     position: relative;
     border: 3px solid rgb(241, 48, 80);
     border-radius: 15px;
@@ -106,7 +98,6 @@ footer div p {
     color: rgb(241, 48, 80);
 }
 .center__main a {
-    display: block;
     width: 100%;
     position: absolute;
     bottom: 30px;
@@ -123,30 +114,30 @@ footer div p {
 
 /* Center sides */
 .center__top, .center__bottom {
-    height: 20%;
+    flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .center__top p, .center__bottom p{
-    display: flex;
-    align-self: center;
     text-transform: uppercase;
     font-size: 40px;
     color: rgb(25, 124, 131);
     opacity: 0.5;
+    line-height: 40px;
 }
 .center__right {
-    width: 25%;
-    background: url(./images/girl.jpeg) 30% 50% no-repeat;
+    flex: 1;
+    background: #0E1A2A url(./images/girl.jpeg) 30% 50% no-repeat;
 }
 nav {
+    flex: 1;
     display: flex;
-    width: 30%;
+    align-items: center;
     border-radius: 20px;
 }
 nav ul {
     display: flex;
-    align-self: center;
     flex-direction: column;
 }
 nav li {
