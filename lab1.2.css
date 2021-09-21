@@ -6,12 +6,6 @@
     line-height: 20px;
     color: rgb(38, 0, 126);
 }
-body{
-    width: 100vw;
-    height: 100vh;
-    min-width: 900px;
-    min-height: 850px;
-}
 
 /* SAME COLORS */
 header, footer {background: rgb(15, 72, 156);}
@@ -19,49 +13,15 @@ header, footer {background: rgb(15, 72, 156);}
 nav, .center__right {background: rgb(212, 212, 212);}
 .center__main, .top-title, .bottom-title {background: rgb(243, 243, 243);}
 
-/*TITLES*/
-.top-title, .bottom-title {
-    display: flex;
-    align-self: center;
-    position: absolute;
-    right: 20px;
-    width: 200px;
-    height: 50px;
-    border: 5px solid rgb(38, 0, 126);
-    border-radius: 15px;
-    box-shadow: 0 5px 10px rgb(27, 44, 99);
-}
-.top-title h1, .bottom-title h2 {
-    width: 100%;
-    align-self: center;
-    font-size: 30px;
-}
-.top-title h1 {
-    text-align: center;
-    letter-spacing: 8px;
-}
-.bottom-title h2 {
-    text-align: right;
-    padding-right: 15px;
-}
-
 /* HEADER_FOOTER */
-header, footer {
-    display: flex;
-    height: 25%;
-    position: relative;
-}
+
 header {
     z-index: 3;
     box-shadow: 0 5px 15px rgb(27, 44, 99);
     border-bottom: 3px solid rgb(38, 0, 126);
 }
 header div {
-    display: flex;
-    align-self: center;
     margin: 0 0 0 30px;
-    width: 70%;
-    justify-content: center;
 }
 header h2, aside h2 {
     color: white;
@@ -78,15 +38,12 @@ header h2{
     width: 150px;
 }
 aside h2 {
-    display: block;
     padding: 10px;
     margin: 10px;
-    width: 90%;
 }
 header p {
     color: white;
     margin: 50px 30px;
-    width: 45%;
     font-size: 25px;
     opacity: 0.5;
     line-height: 30px;
@@ -96,84 +53,72 @@ footer{
     background: url(./images/css_back.jpg) 100% no-repeat;
     background-size: cover;
     opacity: 0.9;
-}
-footer div {
     display: flex;
-    width: 70%;
-}
-footer div p {
-    margin: 20px;
-    overflow: hidden;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
 }
 
-/* CENTER */
-.center {
-    height: 50%;
-    display: flex;
+/*TITLES*/
+.top-title, .bottom-title {
+    border: 5px solid rgb(38, 0, 126);
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgb(27, 44, 99);
+    padding: 5px;
 }
-.center__main-blocks {
-    width: 75%;
+.top-title h1, .bottom-title h2 {
+    width: 100%;
+    align-self: center;
+    font-size: 30px;
 }
-.main-blocks__top-part {
-    display: flex;
-    height: 80%;
+.top-title h1 {
+    text-align: center;
 }
-.center__central-blocks {
-    width: 70%;
+.bottom-title h2 {
+    text-align: right;
+    padding-right: 5px;
 }
 
 /* Center__Main */
 .center__main {
-    height: 80%;
     border: 5px solid rgb(38, 0, 126);
     border-radius: 5px;
-    min-height: 240px;
     margin: 0 10px;
-}
-.center__main img {
-    display: block;
-    margin: 0 auto;
-}
-/* Center sides */
-.center__top, .center__bottom {
-    height: 20%;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
-.center__top p, .center__bottom p{
+
+/* Center sides */
+.center__top, .center__bottom {
     display: flex;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.center__top p, .center__bottom p{
     text-transform: uppercase;
     font-size: 40px;
+    line-height: 45px;
     color: white;
     opacity: 0.5;
 }
-.center__right {
-    width: 25%;
-}
 .center__right ol {
-    margin: 0 40px;
+    margin: 10px 40px;
 }
 .center__right li {
     font-size: 20px;
     padding: 0 0 5px 0;
 }
 nav {
-    display: flex;
-    width: 30%;
     border-radius: 0 0 20px 20px;
     box-shadow: 0 5px 15px rgb(27, 44, 99);
     position: relative;
     z-index: 2;
 }
-nav ul {
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-}
 nav li {
-    padding: 0 0 0 15px;
-    height: 50px;
+    padding: 0 15px;
+    line-height: 30px;
     color: rgb(88, 70, 133);
     font-size: 25px;
 }

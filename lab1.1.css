@@ -13,6 +13,9 @@ nav, .center__right {background: rgb(255, 240, 211);}
 .center__main, .top-title, .bottom-title {background: rgb(243, 243, 243);}
 
 /* HEADER_FOOTER */
+header, footer {
+    justify-content: space-between;
+}
 header div, footer div {    
     display: flex;
     align-items: center;
