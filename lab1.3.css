@@ -5,12 +5,6 @@
     font-weight: 500;
     line-height: 20px;
 }
-body{
-    width: 100vw;
-    height: 100vh;
-    min-width: 700px;
-    min-height: 700px;
-}
 
 /* SAME COLORS */
 header, footer {background: rgb(68, 68, 68);}
@@ -18,25 +12,33 @@ header, footer {background: rgb(68, 68, 68);}
 nav, .center__right {background: rgb(255, 255, 255);}
 .center__main, .top-title, .bottom-title {background: rgb(201, 201, 201);}
 
-/*TITLES*/
-.top-title, .bottom-title {
-    display: flex;
-    align-self: center;
-    position: absolute;
-    right: 20px;
-    width: 200px;
-    height: 50px;
+/* HEADER_FOOTER */
+header {
+    background: url(./images/b&w_forest.jpg) center 100%/cover no-repeat;
+    justify-content: right;
 }
+footer {
+    display: flex;
+}
+footer p {
+    flex: 4;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    opacity: 0.2;
+    text-align: justify;
+    font-size: 14px;
+}
+
+/*TITLES*/
 .top-title h1, .bottom-title h2 {
     text-transform: uppercase;
     width: 100%;
-    align-self: center;
     font-size: 20px;
     font-weight: 700;
+    line-height: 25px;
 }
 .top-title h1 {
     text-align: center;
-    letter-spacing: 15px;
 }
 .bottom-title h2 {
     text-align: right;
@@ -51,55 +53,10 @@ nav, .center__right {background: rgb(255, 255, 255);}
     box-shadow: 0px 0 20px rgb(255, 255, 255);
 }
 
-/* HEADER_FOOTER */
-header, footer {
-    display: flex;
-    height: 25%;
-}
-header {
-    background: url(./images/b&w_forest.jpg) center 100%/cover no-repeat;
-}
-header div {
-    display: flex;
-    align-self: center;
-    margin: 0 0 0 30px;
-    width: 70%;
-    justify-content: center;
-}
-footer p {
-    color: rgb(255, 255, 255);
-    opacity: 0.2;
-    text-align: justify;
-    font-size: 14px;
-    overflow: hidden;
-}
-footer div {
-    display: flex;
-    width: 70%;
-}
-
-/* CENTER */
-.center {
-    height: 50%;
-    display: flex;
-}
-.center__main-blocks {
-    width: 75%;
-}
-.main-blocks__top-part {
-    display: flex;
-    height: 80%;
-}
-.center__central-blocks {
-    width: 70%;
-}
-
 /* Center__Main */
 .center__main {
-    height: 80%;
     margin: 0 15px;
     padding: 20px;
-    position: relative;
 }
 .center__main p {
     font-size: 20px;
@@ -107,7 +64,6 @@ footer div {
     text-align: center;
 }
 .center__main:hover {
-   
     background: #ff9932; /* Old browsers */
     background: -moz-linear-gradient(top,  #ff9932 0%, #30ff3e 50%, #89c8ff 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  #ff9932 0%,#30ff3e 50%,#89c8ff 100%); /* Chrome10-25,Safari5.1-6 */
@@ -117,29 +73,29 @@ footer div {
 
 /* Center sides */
 .center__top, .center__bottom {
-    height: 20%;
     display: flex;
     justify-content: center;
 }
 .center__top p, .center__bottom p{
     display: flex;
-    align-self: center;
+    text-align: center;
     text-transform: capitalize;
     font-size: 25px;
+    line-height: 30px;
     color: rgb(255, 255, 255);
     opacity: 0.5;
 }
 .center__right {
-    width: 25%;
     border-radius: 20px;
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
 }
 .center__right a {
     color: red;
     display: block;
-    padding: 30px 0 0 0;
+    padding: 20px 0 0 0;
     font-weight: 700;
     font-size: 30px;
+    line-height: 35px;
     text-align: center;
 }
 .center__right h2:hover {
@@ -150,7 +106,7 @@ footer div {
     text-align: right;
 }
 .center__right li {
-    padding: 0 0 10px 0;
+    line-height: 25px;
     font-style: italic;
 } 
 .center__right li:nth-child(2) {padding-right: 10%;}
@@ -163,18 +119,11 @@ footer div {
 .center__right li:nth-child(9) {padding-right: 80%;}
 .center__right li:nth-child(10) {padding-right: 90%;}
 nav {
-    display: flex;
-    width: 30%;
     border-radius: 20px;
-}
-nav ul {
-    display: flex;
-    align-self: center;
-    flex-direction: column;
+    padding: 15px;
 }
 nav li {
-    padding: 0 0 0 15px;
-    height: 50px;
+    line-height: 30px;
     color: rgb(168, 168, 168);
 }
 nav li a {
